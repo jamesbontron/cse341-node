@@ -47,22 +47,22 @@ content-type: application/json
 {
     "firstName":"Pedro",
     "lastName": "Borgonoz",
-    "email":"pedrojose@gmail.com",
-    "favoritecolor":"Purple",
+    "email":"p.jose@gmail.com",
+    "favoriteColor":"Purple",
     "birthday":"01/10/2005"
 }
 
 ###Update a contact
-PUT https://cse341-api.herokuapp.com/contacts/626c2a5e5c2228737d83ae29
+PUT https://cse341-api.herokuapp.com/contacts/6274580db4cc0adb0b9bf713
 content-type: application/json
 
 {
-    "firstName" :"Isaac",
-    "lastName":"Naranjo",
-    "email":"i.naranjo@gmail.com",
-    "favoritecolor":"Black",
+    "firstName" :"Pedro",
+    "lastName":"Borgonoz",
+    "email":"pedrojose@gmail.com",
+    "favoriteColor":"Black",
     "birthday":"06/06/2006"
 }
 
 ### DELETE contact Juan Naranjo
-DELETE https://cse341-api.herokuapp.com/contacts/626c14de5c2228737d83ae27
+DELETE https://cse341-api.herokuapp.com/contacts/62745822b4cc0adb0b9bf714
