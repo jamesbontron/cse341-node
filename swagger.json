@@ -57,6 +57,15 @@
                 },
                 "birthday": {
                   "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "favoriteFood": {
+                  "example": "any"
+                },
+                "phoneNumber": {
+                  "example": "any"
                 }
               }
             }
@@ -123,6 +132,15 @@
                   "example": "any"
                 },
                 "birthday": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "favoriteFood": {
+                  "example": "any"
+                },
+                "phoneNumber": {
                   "example": "any"
                 }
               }
