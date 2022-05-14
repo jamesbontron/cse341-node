@@ -8,18 +8,17 @@ let _collection;
 //database
 const MongoClient = require('mongodb').MongoClient;
 
-const initDatabase = () =>{
-
-    MongoClient.connect(process.env.MONGODB_URL, function(err, client) {
-        if (err) throw err;
-        _client = client;
-        _collection = client.db("contacts").collection("contacts");
-        console.log("DB Connected Successfully");
-    });
+const initDatabase = () => {
+  MongoClient.connect(process.env.MONGODB_URL, function (err, client) {
+    if (err) throw err;
+    _client = client;
+    _collection = client.db('contacts').collection('contacts');
+    console.log('DB Connected Successfully');
+  });
 };
 
 const getCollection = () => {
-    return _collection;
+  return _collection;
 };
 
-module.exports = { initDatabase, getCollection};
+module.exports = { initDatabase, getCollection };
