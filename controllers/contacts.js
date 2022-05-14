@@ -39,7 +39,10 @@ const createContact = async (req, res) => {
       lastName: req.body.lastName,
       email: req.body.email,
       favoriteColor: req.body.favoriteColor,
-      birthday: req.body.birthday
+      birthday: req.body.birthday,
+      country: req.body.country,
+      favoriteFood: req.body.favoriteFood,
+      phoneNumber: req.body.phoneNumber
     };
     //push the contact array to the database
     const response = await mongodb.getCollection().insertOne(contact);
@@ -63,7 +66,10 @@ const updateContact = async (req, res) => {
       lastName: req.body.lastName,
       email: req.body.email,
       favoriteColor: req.body.favoriteColor,
-      birthday: req.body.birthday
+      birthday: req.body.birthday,
+      country: req.body.country,
+      favoriteFood: req.body.favoriteFood,
+      phoneNumber: req.body.phoneNumber
     };
     //push the contact array to the database and replace it with the old contact from the database. You have to specify the contactId
     const response = await mongodb.getCollection().replaceOne({ _id: contactId }, contact);
